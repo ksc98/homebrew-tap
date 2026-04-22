@@ -1,16 +1,22 @@
 class NbaTv < Formula
   desc "Watch NBA streams in mpv from your terminal"
   homepage "https://github.com/ksc98/nba-tv"
-  url "https://github.com/ksc98/nba-tv/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "96eea66185741d58a55284b28ddcb2c828580092cbbf6802b08dec4f8a571d11"
+  version "0.1.0"
   license "MIT"
-  head "https://github.com/ksc98/nba-tv.git", branch: "main"
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/ksc98/nba-tv/releases/download/v0.1.0/nba-tv-macos-arm64.tar.gz"
+      sha256 "14d9a75fe9c9615a071642e971c49f6dd6cd8dc776928ac9f91cde928f8d47d5"
+    end
+  end
+
   depends_on "mpv"
+  depends_on arch: :arm64
+  depends_on :macos
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "nba-tv"
   end
 
   test do
