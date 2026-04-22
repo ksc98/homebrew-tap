@@ -4,7 +4,7 @@ class NbaTv < Formula
   version "0.1.1"
   license "MIT"
 
-  url "https://github.com/ksc98/nba-tv/releases/download/v0.1.1/nba-tv-macos-arm64.tar.gz"
+  url "https://github.com/ksc98/homebrew-tap/releases/download/nba-tv-v0.1.1/nba-tv-macos-arm64.tar.gz"
   sha256 "3e1d5f5ea1796841270c5580d8c791d205f3453ee272d9b45017b581e5f07215"
 
   depends_on "mpv"
