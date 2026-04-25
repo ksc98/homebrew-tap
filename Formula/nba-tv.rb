@@ -1,13 +1,13 @@
 class NbaTv < Formula
   desc "Watch NBA streams in mpv from your terminal"
   homepage "https://github.com/ksc98/homebrew-tap"
-  version "1.5.5"
+  version "1.5.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ksc98/homebrew-tap/releases/download/nba-tv-v1.5.5/nba-tv-macos-arm64.tar.gz"
-      sha256 "910f3da566dfd7ea230917c2c9f98a51dcfdfa6ca887185f76e781898a805db3"
+      url "https://github.com/ksc98/homebrew-tap/releases/download/nba-tv-v1.5.6/nba-tv-macos-arm64.tar.gz"
+      sha256 "a3939b1343cffbd81e143484f4bbc57c39a599e001010481f16901bab52680d0"
     end
   end
 
