@@ -11,13 +11,6 @@ class NbaTv < Formula
     end
   end
 
-  on_linux do
-    on_intel do
-      url "https://github.com/ksc98/homebrew-tap/releases/download/nba-tv-v1.5.4/nba-tv-linux-x86_64.tar.gz"
-      sha256 "84ea096eb197d37884b046c285468478efdeeb0a09dabf1524bb44eec897d0c7"
-    end
-  end
-
   depends_on "mpv"
   depends_on "whisper-cpp" => :recommended
 
