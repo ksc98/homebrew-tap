@@ -1,0 +1,31 @@
+class Borders < Formula
+  desc "Colored window borders for macOS"
+  homepage "https://github.com/ksc98/borders"
+  url "https://github.com/ksc98/borders.git",
+      tag:      "v0.1.0",
+      revision: "df08572699b8e0c5bd474ec77035f66ee027991b"
+  license "GPL-3.0-only"
+  head "https://github.com/ksc98/borders.git", branch: "main"
+
+  depends_on "rust" => :build
+  depends_on :macos
+
+  def install
+    system "cargo", "install", *std_cargo_args
+    man1.install "docs/borders.1"
+    (var/"log/borders").mkpath
+  end
+
+  service do
+    run opt_bin/"borders"
+    environment_variables PATH: std_service_path_env, LANG: "en_US.UTF-8"
+    keep_alive true
+    process_type :interactive
+    log_path var/"log/borders/borders.out.log"
+    error_log_path var/"log/borders/borders.err.log"
+  end
+
+  test do
+    assert_match "borders-v", shell_output("#{bin}/borders --version")
+  end
+end
