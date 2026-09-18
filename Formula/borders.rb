@@ -2,8 +2,8 @@ class Borders < Formula
   desc "Colored window borders for macOS"
   homepage "https://github.com/ksc98/borders"
   url "https://github.com/ksc98/borders.git",
-      tag:      "v0.3.3",
-      revision: "6d66cf82fc095d5d3846e59fa636baa562c34113"
+      tag:      "v0.4.0",
+      revision: "48c3dff39b39e897686df187cab5ad2b2284de41"
   license "GPL-3.0-only"
   head "https://github.com/ksc98/borders.git", branch: "main"
 
