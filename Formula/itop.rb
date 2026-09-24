@@ -3,7 +3,7 @@ class Itop < Formula
   homepage "https://github.com/ksc98/itop"
   # ksc98/itop is private: a source build from git, cloned with your GitHub
   # credentials (`gh auth login` + gh's git credential helper, or any other).
-  url "https://github.com/ksc98/itop.git", tag: "v0.2.0", revision: "fe5e05e130924572d31e11ed93a056040face057"
+  url "https://github.com/ksc98/itop.git", tag: "v0.2.1", revision: "c5f79260d21ca5f74e3036b28cff1aa2931de7e2"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/ksc98/itop.git", branch: "main"
 
