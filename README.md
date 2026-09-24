@@ -5,12 +5,14 @@ Personal Homebrew tap.
 ## Install
 
 ```
+brew install ksc98/tap/itop
 ```
 
 Or tap first, then install:
 
 ```
 brew tap ksc98/tap
+brew install itop
 ```
 
 ## Formulae
