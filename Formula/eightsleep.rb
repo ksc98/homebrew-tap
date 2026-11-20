@@ -1,8 +1,8 @@
 class Eightsleep < Formula
   desc "Command-line control for the Eight Sleep Pod"
   homepage "https://github.com/ksc98/8sleep-cli"
-  url "https://github.com/ksc98/8sleep-cli/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "aed1767d6ded072fc39ee173323185a4cf7a3c0a9f8656e5fba2be982da53e61"
+  url "https://github.com/ksc98/8sleep-cli/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "53d2310eabf8ef377afa7e7cee548514cdf914a27d1619abe673eeaa8ff2fac1"
   license "MIT"
   head "https://github.com/ksc98/8sleep-cli.git", branch: "main"
 
@@ -14,11 +14,8 @@ class Eightsleep < Formula
 
   def caveats
     <<~EOS
-      Put your Eight Sleep login in ~/.config/8sleep/config.toml:
-        email = "you@example.com"
-        password = "..."
-      or name a 1Password item instead:
-        onepassword = "op://Personal/EightSleep"
+      Sign in with your Eight Sleep email and password:
+        8sleep setup
     EOS
   end
 
