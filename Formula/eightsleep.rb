@@ -1,15 +1,32 @@
 class Eightsleep < Formula
   desc "Command-line control for the Eight Sleep Pod"
   homepage "https://github.com/ksc98/8sleep-cli"
-  url "https://github.com/ksc98/8sleep-cli/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "53d2310eabf8ef377afa7e7cee548514cdf914a27d1619abe673eeaa8ff2fac1"
   license "MIT"
-  head "https://github.com/ksc98/8sleep-cli.git", branch: "main"
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.2/8sleep-aarch64-apple-darwin.tar.gz"
+      sha256 "547ad170e9b0e4a7af7ef31cbe2dd6f09d7a7bf4d20fd010c71d2c70fef19bfd"
+    end
+    on_intel do
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.2/8sleep-x86_64-apple-darwin.tar.gz"
+      sha256 "978eae0c55ceb0e926456076c3b4519f8f34329df544156910a1791368ada299"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.2/8sleep-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "876e729ceb5f9072b3624863e4d113ce6e10c3a70fd4e7ab8ec3b8022a646e33"
+    end
+    on_intel do
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.2/8sleep-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "cadf57fe8b387a842b5c5efed05c04c6746018e42bf226355d62a65b2bc1d85e"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "8sleep"
   end
 
   def caveats
