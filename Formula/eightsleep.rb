@@ -5,23 +5,23 @@ class Eightsleep < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.5/8sleep-aarch64-apple-darwin.tar.gz"
-      sha256 "b2537ac74151ce6e8e424365f425f84d0a987a7ae01a57f7efcc9b39b9a11540"
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.6/8sleep-aarch64-apple-darwin.tar.gz"
+      sha256 "926f73fbf7d0b2dd051d5bbcc38528c18bbaa7d9c669dab57f85146cb7ec7961"
     end
     on_intel do
-      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.5/8sleep-x86_64-apple-darwin.tar.gz"
-      sha256 "56645ec0e5876d04aa0ae688139f5a4eccc842672455836b29a7603f925ee992"
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.6/8sleep-x86_64-apple-darwin.tar.gz"
+      sha256 "298783632b81e0045bb7e0cebd430dd20f08911e8a837bc181e3380989722f11"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.5/8sleep-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0be95206020ae25240b38950081432377145913a2852bcc8ffb8a19830dad7ad"
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.6/8sleep-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "180fdfbc9e14b6e262ef8de7cb644a12f1ebf554b095247c95ffc916acb505d0"
     end
     on_intel do
-      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.5/8sleep-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f1e212ca8e7c269035a0e4e5f595d68f43fe754ad2a02301c227fc68c5ac2ef3"
+      url "https://github.com/ksc98/8sleep-cli/releases/download/v0.1.6/8sleep-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "42b46dcc5fc0023a46d14021134d6609cff8e95345c9f5fc6c4cb10a4dd3e685"
     end
   end
 
